@@ -4,6 +4,20 @@ Interactive treemap inspired by the original [US Job Market Visualizer](https://
 
 The goal is simple: show which French occupation groups are most exposed to current AI tools, without pretending that exposure means job disappearance. The visualization keeps the original treemap-first UI and adapts the data, copy, labels, sources, and scoring rationales for a French/European context.
 
+## Preview
+
+The main view opens on the AI exposure layer. The top metrics summarize the French labor market represented in the dataset, while the treemap keeps the original visual language: rectangle size for employment volume, color for the selected metric.
+
+![Main AI exposure view](docs/assets/preview-overview.png)
+
+![Treemap detail on the AI exposure layer](docs/assets/preview-exposure.png)
+
+The same treemap can be recolored by salary proxy or recent employment trend, which makes it easier to compare AI exposure with labor-market structure instead of reading it as a simple replacement forecast.
+
+![Salary layer](docs/assets/preview-salary.png)
+
+![Employment trend layer](docs/assets/preview-trend.png)
+
 ## Live Concept
 
 Each rectangle represents one occupation group in France.
