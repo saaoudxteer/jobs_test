@@ -1,0 +1,289 @@
+[
+  {
+    "slug": "professions-intermediaires-de-gestion-et-d-administration",
+    "title": "Professions intermédiaires de gestion et d'administration",
+    "isco08": "OC33",
+    "exposure": 7.2,
+    "rationale": "Ces fonctions traitent des dossiers, chiffres, procédures, clients internes et outils numériques. L'IA peut automatiser la saisie, le contrôle, la recherche d'information et une partie de la communication, ce qui crée une exposition élevée."
+  },
+  {
+    "slug": "professionnels-de-la-gestion-et-de-l-administration",
+    "title": "Professionnels de la gestion et de l'administration",
+    "isco08": "OC24",
+    "exposure": 8.0,
+    "rationale": "La gestion, la finance, les RH et l'administration sont très documentaires et orientées données. L'IA peut automatiser une partie de l'analyse, de la rédaction, du contrôle et du reporting, avec une exposition élevée malgré le besoin de jugement."
+  },
+  {
+    "slug": "personnel-de-soin-et-d-aide-a-la-personne",
+    "title": "Personnel de soin et d'aide à la personne",
+    "isco08": "OC53",
+    "exposure": 2.8,
+    "rationale": "Le soin et l'aide à la personne exigent présence, gestes, confiance et adaptation fine aux situations humaines. L'IA peut assister le suivi ou la coordination, mais elle ne remplace pas facilement le coeur relationnel et physique."
+  },
+  {
+    "slug": "professionnels-de-l-enseignement",
+    "title": "Professionnels de l'enseignement",
+    "isco08": "OC23",
+    "exposure": 6.2,
+    "rationale": "L'enseignement comporte de la préparation de cours, de l'évaluation et de l'accompagnement que l'IA peut transformer. La présence pédagogique, la gestion de classe et la relation avec les apprenants limitent toutefois la substitution directe."
+  },
+  {
+    "slug": "professionnels-des-sciences-et-de-l-ingenierie",
+    "title": "Professionnels des sciences et de l'ingénierie",
+    "isco08": "OC21",
+    "exposure": 7.3,
+    "rationale": "Les sciences et l'ingénierie produisent des modèles, calculs, plans, simulations et documents techniques. L'IA peut fortement augmenter la productivité, mais la validation, la responsabilité technique et les contraintes physiques gardent un rôle humain important."
+  },
+  {
+    "slug": "vendeurs",
+    "title": "Vendeurs",
+    "isco08": "OC52",
+    "exposure": 5.6,
+    "rationale": "La vente combine relation client, conseil, encaissement et outils numériques. L'IA peut automatiser la recommandation, le marketing et le support, mais la présence en magasin et la persuasion humaine réduisent l'exposition directe."
+  },
+  {
+    "slug": "agents-de-nettoyage-et-aides",
+    "title": "Agents de nettoyage et aides",
+    "isco08": "OC91",
+    "exposure": 2.0,
+    "rationale": "Le nettoyage et les aides reposent sur des gestes physiques dans des lieux variés. L'IA peut optimiser les tournées ou guider des robots spécialisés, mais le travail quotidien reste peu numérisable."
+  },
+  {
+    "slug": "conducteurs-et-operateurs-mobiles",
+    "title": "Conducteurs et opérateurs mobiles",
+    "isco08": "OC83",
+    "exposure": 4.0,
+    "rationale": "La conduite et les opérations mobiles sont touchées par l'aide à la navigation, l'optimisation et l'autonomie progressive. Les contraintes réglementaires, la sécurité, la route et la manutention limitent encore la substitution directe."
+  },
+  {
+    "slug": "services-directs-aux-particuliers",
+    "title": "Services directs aux particuliers",
+    "isco08": "OC51",
+    "exposure": 3.5,
+    "rationale": "Les services directs aux particuliers dépendent fortement de la présence physique, de l'adaptation immédiate et de la relation. L'IA peut aider à organiser l'activité ou recommander des actions, mais elle touche moins le coeur du travail."
+  },
+  {
+    "slug": "professions-intermediaires-du-droit-du-social-et-de-la-culture",
+    "title": "Professions intermédiaires du droit, du social et de la culture",
+    "isco08": "OC34",
+    "exposure": 6.2,
+    "rationale": "Le travail social, juridique et culturel intermédiaire mélange dossiers, accompagnement et interaction humaine. L'IA peut aider la rédaction et la recherche d'information, mais le contexte social, l'écoute et l'arbitrage limitent l'automatisation."
+  },
+  {
+    "slug": "metiers-qualifies-du-batiment-hors-electriciens",
+    "title": "Métiers qualifiés du bâtiment, hors électriciens",
+    "isco08": "OC71",
+    "exposure": 2.4,
+    "rationale": "Les métiers du bâtiment nécessitent gestes techniques, déplacement, adaptation au chantier et manipulation de matériaux. L'IA peut aider aux plans et au diagnostic, mais le travail physique limite fortement la substitution."
+  },
+  {
+    "slug": "employes-de-bureau-et-operateurs-de-saisie",
+    "title": "Employés de bureau et opérateurs de saisie",
+    "isco08": "OC41",
+    "exposure": 8.8,
+    "rationale": "La saisie, le secrétariat et les tâches de bureau structurées sont fortement numériques et répétables. L'IA peut produire des courriers, résumer, classer, saisir et contrôler des informations, ce qui rend l'exposition très élevée."
+  },
+  {
+    "slug": "professions-intermediaires-de-sante",
+    "title": "Professions intermédiaires de santé",
+    "isco08": "OC32",
+    "exposure": 3.8,
+    "rationale": "Les professions intermédiaires de santé sont fortement liées au soin, aux gestes, à la présence et au suivi humain. L'IA peut assister la documentation et certains diagnostics, mais l'automatisation directe du coeur du métier reste limitée."
+  },
+  {
+    "slug": "techniciens-des-sciences-et-de-l-ingenierie",
+    "title": "Techniciens des sciences et de l'ingénierie",
+    "isco08": "OC31",
+    "exposure": 5.8,
+    "rationale": "Ces techniciens combinent mesures, plans, diagnostics et interventions matérielles. L'IA peut aider à l'analyse, à la documentation et au diagnostic, mais l'exécution dépend souvent du terrain, des équipements et de contrôles humains."
+  },
+  {
+    "slug": "professionnels-de-sante",
+    "title": "Professionnels de santé",
+    "isco08": "OC22",
+    "exposure": 4.4,
+    "rationale": "Les professionnels de santé utilisent des données et de la documentation médicale que l'IA peut assister. L'exposition est freinée par l'examen physique, la relation de soin, la responsabilité clinique et la réglementation."
+  },
+  {
+    "slug": "professionnels-du-droit-des-sciences-sociales-et-de-la-culture",
+    "title": "Professionnels du droit, des sciences sociales et de la culture",
+    "isco08": "OC26",
+    "exposure": 7.7,
+    "rationale": "Le droit, les sciences sociales et la culture produisent beaucoup de recherche, synthèse, rédaction et contenu numérique. L'IA peut automatiser ou accélérer ces tâches, mais l'interprétation, la responsabilité, la créativité et la relation humaine restent déterminantes."
+  },
+  {
+    "slug": "professionnels-des-technologies-de-l-information",
+    "title": "Professionnels des technologies de l'information",
+    "isco08": "OC25",
+    "exposure": 9.0,
+    "rationale": "Les professionnels de l'informatique travaillent presque entièrement sur des artefacts numériques. Génération de code, tests, documentation, support et analyse de systèmes sont déjà fortement augmentés par l'IA, ce qui expose fortement l'organisation du travail."
+  },
+  {
+    "slug": "metiers-qualifies-de-la-metallurgie-et-de-la-mecanique",
+    "title": "Métiers qualifiés de la métallurgie et de la mécanique",
+    "isco08": "OC72",
+    "exposure": 3.2,
+    "rationale": "La métallurgie et la mécanique combinent savoir-faire manuel, machines et contrôle qualité. L'IA peut soutenir le diagnostic, la programmation ou la maintenance, mais l'intervention physique reste centrale."
+  },
+  {
+    "slug": "employes-de-comptabilite-stocks-et-logistique-administrative",
+    "title": "Employés de comptabilité, stocks et logistique administrative",
+    "isco08": "OC43",
+    "exposure": 8.0,
+    "rationale": "La comptabilité de base, les stocks et l'enregistrement administratif reposent sur des données structurées. L'IA et l'automatisation peuvent traiter, rapprocher, détecter les anomalies et générer des documents, avec une forte exposition."
+  },
+  {
+    "slug": "directeurs-de-production-et-de-services-specialises",
+    "title": "Directeurs de production et de services spécialisés",
+    "isco08": "OC13",
+    "exposure": 5.8,
+    "rationale": "La gestion de production et de services spécialisés combine pilotage numérique, optimisation et supervision de terrain. L'IA peut améliorer la planification et la maintenance prédictive, mais les contraintes physiques, industrielles et organisationnelles limitent l'automatisation complète."
+  },
+  {
+    "slug": "agriculteurs-et-ouvriers-qualifies-de-l-agriculture",
+    "title": "Agriculteurs et ouvriers qualifiés de l'agriculture",
+    "isco08": "OC61",
+    "exposure": 2.2,
+    "rationale": "L'agriculture qualifiée reste très matérielle, saisonnière et dépendante d'environnements variables. L'IA peut optimiser les décisions et piloter certains équipements, mais l'exécution physique limite l'exposition directe."
+  },
+  {
+    "slug": "manoeuvres-de-l-industrie-du-batiment-et-des-transports",
+    "title": "Manoeuvres de l'industrie, du bâtiment et des transports",
+    "isco08": "OC93",
+    "exposure": 2.5,
+    "rationale": "Ces manoeuvres exécutent des tâches physiques dans l'industrie, le bâtiment et les transports. L'automatisation peut toucher certains postes répétitifs, mais la variabilité des environnements maintient une exposition limitée."
+  },
+  {
+    "slug": "directeurs-administratifs-et-commerciaux",
+    "title": "Directeurs administratifs et commerciaux",
+    "isco08": "OC12",
+    "exposure": 7.2,
+    "rationale": "Les directions administratives et commerciales manipulent beaucoup de données, documents, reporting et arbitrages. L'IA peut automatiser l'analyse, les tableaux de bord et une partie de la communication, tout en laissant les décisions relationnelles et managériales aux humains."
+  },
+  {
+    "slug": "conducteurs-d-installations-fixes-et-de-machines",
+    "title": "Conducteurs d'installations fixes et de machines",
+    "isco08": "OC81",
+    "exposure": 5.0,
+    "rationale": "Les conducteurs d'installations travaillent avec des machines et des données de supervision. L'IA peut optimiser les réglages, détecter des anomalies et automatiser des séquences, mais la sécurité et la surveillance humaine restent nécessaires."
+  },
+  {
+    "slug": "directeurs-de-l-hotellerie-du-commerce-et-autres-services",
+    "title": "Directeurs de l'hôtellerie, du commerce et autres services",
+    "isco08": "OC14",
+    "exposure": 4.5,
+    "rationale": "Ces métiers de management reposent beaucoup sur la présence client, la coordination locale et les imprévus de service. L'IA peut aider à prévoir la demande, gérer les plannings et analyser les ventes, mais le coeur opérationnel reste humain."
+  },
+  {
+    "slug": "metiers-qualifies-de-l-alimentation-du-bois-et-du-textile",
+    "title": "Métiers qualifiés de l'alimentation, du bois et du textile",
+    "isco08": "OC75",
+    "exposure": 2.6,
+    "rationale": "L'alimentation, le bois et le textile qualifiés restent fortement liés aux matériaux, outils et gestes. L'IA peut aider à la conception, au contrôle ou à la planification, mais le coeur de production est peu numérisable."
+  },
+  {
+    "slug": "services-de-protection-et-securite",
+    "title": "Services de protection et sécurité",
+    "isco08": "OC54",
+    "exposure": 3.4,
+    "rationale": "La sécurité et la protection reposent sur la présence, l'intervention et le jugement en situation réelle. L'IA peut améliorer la surveillance, l'analyse d'images ou la coordination, mais l'action terrain reste humaine."
+  },
+  {
+    "slug": "employes-de-relation-client",
+    "title": "Employés de relation client",
+    "isco08": "OC42",
+    "exposure": 7.5,
+    "rationale": "La relation client standardisée est déjà transformée par les agents conversationnels et l'automatisation des demandes simples. Les cas sensibles, la négociation et l'empathie gardent de la valeur humaine, mais le volume de tâches automatisables est important."
+  },
+  {
+    "slug": "metiers-qualifies-de-l-electricite-et-de-l-electronique",
+    "title": "Métiers qualifiés de l'électricité et de l'électronique",
+    "isco08": "OC74",
+    "exposure": 3.5,
+    "rationale": "L'électricité et l'électronique exigent installation, contrôle, réparation et sécurité sur site. L'IA peut assister le diagnostic et la documentation, mais les gestes techniques et la responsabilité terrain restent importants."
+  },
+  {
+    "slug": "autres-employes-administratifs",
+    "title": "Autres employés administratifs",
+    "isco08": "OC44",
+    "exposure": 7.2,
+    "rationale": "Ces emplois administratifs manipulent des dossiers, formulaires, archives et flux d'information. L'IA peut trier, extraire, résumer et préparer les documents, mais les exceptions et le contact organisationnel nécessitent encore des humains."
+  },
+  {
+    "slug": "aides-de-cuisine",
+    "title": "Aides de cuisine",
+    "isco08": "OC94",
+    "exposure": 2.6,
+    "rationale": "Les aides de cuisine travaillent dans un environnement physique, rythmé et contraint par l'organisation du service. L'IA peut aider les achats ou les plannings, mais les gestes de préparation et de nettoyage restent humains."
+  },
+  {
+    "slug": "eboueurs-et-autres-professions-elementaires",
+    "title": "Éboueurs et autres professions élémentaires",
+    "isco08": "OC96",
+    "exposure": 2.3,
+    "rationale": "Les éboueurs et autres professions élémentaires travaillent surtout sur des tâches physiques et locales. L'IA peut optimiser les tournées ou la maintenance, mais elle transforme surtout les outils plutôt que le coeur du métier."
+  },
+  {
+    "slug": "dirigeants-hauts-fonctionnaires-et-elus",
+    "title": "Dirigeants, hauts fonctionnaires et élus",
+    "isco08": "OC11",
+    "exposure": 6.7,
+    "rationale": "Ces fonctions reposent sur l'analyse de dossiers, la production de décisions et la coordination d'organisations. L'IA peut accélérer la veille, la synthèse et la rédaction, mais la responsabilité publique, politique ou stratégique maintient une forte intervention humaine."
+  },
+  {
+    "slug": "techniciens-de-l-information-et-des-communications",
+    "title": "Techniciens de l'information et des communications",
+    "isco08": "OC35",
+    "exposure": 7.6,
+    "rationale": "Les techniciens informatiques travaillent sur des systèmes numériques, incidents, configurations et documentation. L'IA peut accélérer le support, le diagnostic et l'automatisation de scripts, même si les infrastructures et interventions restent supervisées."
+  },
+  {
+    "slug": "manoeuvres-agricoles-forestiers-et-pecheurs",
+    "title": "Manoeuvres agricoles, forestiers et pêcheurs",
+    "isco08": "OC92",
+    "exposure": 1.8,
+    "rationale": "Les manoeuvres agricoles et forestiers réalisent surtout des tâches physiques saisonnières et en extérieur. L'IA peut orienter les décisions, mais son effet sur le coeur manuel reste faible."
+  },
+  {
+    "slug": "assembleurs",
+    "title": "Assembleurs",
+    "isco08": "OC82",
+    "exposure": 4.2,
+    "rationale": "L'assemblage contient des tâches répétitives exposées à l'automatisation industrielle. L'IA peut renforcer la robotique et le contrôle qualité, mais les postes variables ou manuels restent moins exposés."
+  },
+  {
+    "slug": "metiers-de-l-artisanat-et-de-l-impression",
+    "title": "Métiers de l'artisanat et de l'impression",
+    "isco08": "OC73",
+    "exposure": 4.6,
+    "rationale": "L'artisanat et l'impression mélangent production matérielle et parfois conception numérique. L'IA peut transformer la création, la prépresse et certains flux, mais le geste, la finition et les machines limitent l'automatisation totale."
+  },
+  {
+    "slug": "sous-officiers-des-forces-armees",
+    "title": "Sous-officiers des forces armées",
+    "isco08": "OC02",
+    "exposure": 3.8,
+    "rationale": "Les sous-officiers utilisent des informations structurées et des outils de coordination, mais leur coeur de métier reste l'encadrement terrain et l'exécution opérationnelle. L'IA peut aider à la préparation et au suivi, sans remplacer la présence et le jugement en situation."
+  },
+  {
+    "slug": "militaires-du-rang",
+    "title": "Militaires du rang",
+    "isco08": "OC03",
+    "exposure": 2.8,
+    "rationale": "Les militaires du rang exercent surtout des missions physiques, opérationnelles et contextuelles. L'IA peut améliorer l'équipement, la surveillance ou la logistique, mais l'exécution reste fortement contrainte par le terrain."
+  },
+  {
+    "slug": "officiers-des-forces-armees",
+    "title": "Officiers des forces armées",
+    "isco08": "OC01",
+    "exposure": 4.5,
+    "rationale": "Le travail d'officier combine analyse d'information, planification et commandement, que l'IA peut assister fortement. L'exposition reste limitée par la responsabilité opérationnelle, la chaîne de commandement et les situations physiques à haut risque."
+  },
+  {
+    "slug": "ouvriers-qualifies-de-la-foret-de-la-peche-et-de-la-chasse",
+    "title": "Ouvriers qualifiés de la forêt, de la pêche et de la chasse",
+    "isco08": "OC62",
+    "exposure": 1.8,
+    "rationale": "La forêt, la pêche et la chasse qualifiées se déroulent dans des environnements physiques difficiles et peu standardisés. L'IA peut aider à la cartographie ou à la prévision, mais le coeur du travail reste manuel et terrain."
+  }
+]

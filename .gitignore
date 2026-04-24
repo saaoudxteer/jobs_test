@@ -19,5 +19,15 @@ pages/
 embed.py
 embeddings.json
 
+# Local experiments not part of the France public build
+agent*.py
+synthetic_scores.json
+site/heatmap.html
+
+# Broken local source attempts kept out of the public repo
+data/metiers_2030.xlsx
+data/insee_salaries_2023.xlsx
+data/rome_fiches.json
+
 # macOS
 .DS_Store

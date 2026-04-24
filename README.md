@@ -1,77 +1,141 @@
-# US Job Market Visualizer
+# Les metiers francais face a l'IA
 
-A research tool for visually exploring Bureau of Labor Statistics [Occupational Outlook Handbook](https://www.bls.gov/ooh/) data. This is not a report, a paper, or a serious economic publication — it is a development tool for exploring BLS data visually.
+Interactive treemap inspired by the original [US Job Market Visualizer](https://github.com/karpathy/jobs), rebuilt for the French labor market with official European public data.
 
-**Live demo: [karpathy.ai/jobs](https://karpathy.ai/jobs/)**
+The goal is simple: show which French occupation groups are most exposed to current AI tools, without pretending that exposure means job disappearance. The visualization keeps the original treemap-first UI and adapts the data, copy, labels, sources, and scoring rationales for a French/European context.
 
-## What's here
+## Live Concept
 
-The BLS OOH covers **342 occupations** spanning every sector of the US economy, with detailed data on job duties, work environment, education requirements, pay, and employment projections. We scraped all of it and built an interactive treemap visualization where each rectangle's **area** is proportional to total employment and **color** shows the selected metric — toggle between BLS projected growth outlook, median pay, education requirements, and AI exposure.
+Each rectangle represents one occupation group in France.
 
-## LLM-powered coloring
+- Area: number of employed people in 2024.
+- Color: selected metric.
+- Default layer: AI exposure score from 0 to 10.
+- Tooltip: employment, trend, salary proxy, education level, AI score, and the reason behind the score.
 
-The repo includes scrapers, parsers, and a pipeline for writing custom LLM prompts to score and color occupations by any criteria. You write a prompt, the LLM scores each occupation, and the treemap colors accordingly. The "Digital AI Exposure" layer is one example — it estimates how much current AI (which is primarily digital) will reshape each occupation. But you could write a different prompt for any question — e.g. exposure to humanoid robotics, offshoring risk, climate impact — and re-run the pipeline to get a different coloring. See `score.py` for the prompt and scoring pipeline.
+Available layers:
 
-**What "AI Exposure" is NOT:**
-- It does **not** predict that a job will disappear. Software developers score 9/10 because AI is transforming their work — but demand for software could easily *grow* as each developer becomes more productive.
-- It does **not** account for demand elasticity, latent demand, regulatory barriers, or social preferences for human workers.
-- The scores are rough LLM estimates (Gemini Flash via OpenRouter), not rigorous predictions. Many high-exposure jobs will be reshaped, not replaced.
+- `Exposition IA`: analytical score with a French rationale for every occupation.
+- `Tendance 2019-2024`: employment change from Eurostat labor-force data.
+- `Salaire`: gross monthly salary proxy from Eurostat SES 2022.
+- `Diplome`: dominant education level by ISCO major group.
 
-## Data pipeline
+## Data Scope
 
-1. **Scrape** (`scrape.py`) — Playwright (non-headless, BLS blocks bots) downloads raw HTML for all 342 occupation pages into `html/`.
-2. **Parse** (`parse_detail.py`, `process.py`) — BeautifulSoup converts raw HTML into clean Markdown files in `pages/`.
-3. **Tabulate** (`make_csv.py`) — Extracts structured fields (pay, education, job count, growth outlook, SOC code) into `occupations.csv`.
-4. **Score** (`score.py`) — Sends each occupation's Markdown description to an LLM with a scoring rubric. Each occupation gets an AI Exposure score from 0-10 with a rationale. Results saved to `scores.json`. Fork this to write your own prompts.
-5. **Build site data** (`build_site_data.py`) — Merges CSV stats and AI exposure scores into a compact `site/data.json` for the frontend.
-6. **Website** (`site/index.html`) — Interactive treemap visualization with four color layers: BLS Outlook, Median Pay, Education, and Digital AI Exposure.
+The current version is France-first and uses Eurostat ISCO-08 two-digit occupation groups.
 
-## Key files
+- 41 occupation groups.
+- 28,520,500 employed people represented in France in 2024.
+- 41/41 occupations have an AI exposure score and rationale.
+- Salary is available for 33/41 groups. Missing salary values are left blank when Eurostat does not publish them in the selected table.
 
-| File | Description |
-|------|-------------|
-| `occupations.json` | Master list of 342 occupations with title, URL, category, slug |
-| `occupations.csv` | Summary stats: pay, education, job count, growth projections |
-| `scores.json` | AI exposure scores (0-10) with rationales for all 342 occupations |
-| `prompt.md` | All data in a single file, designed to be pasted into an LLM for analysis |
-| `html/` | Raw HTML pages from BLS (source of truth, ~40MB) |
-| `pages/` | Clean Markdown versions of each occupation page |
-| `site/` | Static website (treemap visualization) |
+This is less granular than a 225-metier DARES product, but it is fully reproducible from accessible official sources and works cleanly for a public LinkedIn-ready prototype.
 
-## LLM prompt
+## Data Sources
 
-[`prompt.md`](prompt.md) packages all the data — aggregate statistics, tier breakdowns, exposure by pay/education, BLS growth projections, and all 342 occupations with their scores and rationales — into a single file (~45K tokens) designed to be pasted into an LLM. This lets you have a data-grounded conversation about AI's impact on the job market without needing to run any code. Regenerate it with `uv run python make_prompt.py`.
+Primary official sources:
 
-## Setup
+- Eurostat `lfsa_egai2d`: employed persons by detailed occupation, France, 2019-2024.
+- Eurostat `earn_ses22_25`: gross monthly earnings by occupation and enterprise size class, France, 2022.
+- Eurostat `lfsa_egised`: employed persons by occupation and educational attainment level, France, 2024.
+- DARES FAP 2021: French occupation taxonomy reference.
 
-```
-uv sync
-uv run playwright install chromium
-```
+Detailed source notes are in [docs/DATA_SOURCES.md](docs/DATA_SOURCES.md), [data/source_manifest.json](data/source_manifest.json), and [data/source_checks.md](data/source_checks.md).
 
-Requires an OpenRouter API key in `.env`:
-```
-OPENROUTER_API_KEY=your_key_here
-```
+## Project Files
 
-## Usage
+| Path | Purpose |
+| --- | --- |
+| `site/index.html` | Static treemap UI, regenerated from the original committed design and localized for France. |
+| `site/data.json` | Compact frontend dataset consumed by the site. |
+| `build_fr_dataset.py` | Reproducible Eurostat data pull, normalization, scoring, and JSON/CSV export. |
+| `build_fr_site.py` | Rebuilds the localized site from the original UI baseline. |
+| `build_site_data.py` | Compatibility wrapper that runs the France dataset build. |
+| `occupations.csv` | Human-readable generated occupation table. |
+| `occupations.json` | Generated occupation data with metadata. |
+| `scores_fr.json` | AI exposure scores and French rationales. |
+| `data/raw/` | Cached Eurostat API responses used by the build. |
+| `GPT.md` | Working project plan and implementation context for future agents. |
+
+## Run Locally
+
+Use Python 3.11+.
 
 ```bash
-# Scrape BLS pages (only needed once, results are cached in html/)
-uv run python scrape.py
-
-# Generate Markdown from HTML
-uv run python process.py
-
-# Generate CSV summary
-uv run python make_csv.py
-
-# Score AI exposure (uses OpenRouter API)
-uv run python score.py
-
-# Build website data
-uv run python build_site_data.py
-
-# Serve the site locally
-cd site && python -m http.server 8000
+python build_fr_dataset.py
+python build_fr_site.py
+cd site
+python -m http.server 8000
 ```
+
+Open:
+
+```text
+http://127.0.0.1:8000/
+```
+
+The local server is required because the page loads `data.json` with `fetch()`.
+
+## Rebuild Data
+
+```bash
+python build_fr_dataset.py
+```
+
+This writes:
+
+- `data/raw/*.json`
+- `data/source_manifest.json`
+- `data/source_checks.md`
+- `occupations.csv`
+- `occupations.json`
+- `scores_fr.json`
+- `site/data.json`
+
+The script uses cached raw files if a network call fails.
+
+## Rebuild Site
+
+```bash
+python build_fr_site.py
+```
+
+This regenerates `site/index.html` from the original committed `site/index.html` through `git show HEAD:site/index.html`, then applies France-specific labels, legends, units, and source copy.
+
+## Methodology
+
+AI exposure is a project estimate, not an official statistic. A higher score means the occupation contains more tasks that current AI systems can transform through automation, assistance, productivity gains, or task redesign.
+
+The score considers:
+
+- Digital work share.
+- Text, code, data, reporting, and document workflows.
+- Repetitive or structured information processing.
+- Need for physical presence.
+- Human relationship, care, teaching, negotiation, or trust.
+- Regulation, responsibility, safety, and judgment.
+- On-site constraints and unpredictable environments.
+
+A high score does not mean the job disappears. It means the work content is more likely to change.
+
+## Validation
+
+Current validation checks:
+
+```bash
+python -m json.tool site/data.json
+python -m json.tool data/source_manifest.json
+```
+
+Expected current dataset:
+
+- `41` occupations.
+- `28,520,500` represented employed people.
+- `41` AI rationales.
+- `33` groups with salary proxy values.
+
+## Credits
+
+Original idea and UI inspiration: [karpathy/jobs](https://github.com/karpathy/jobs).
+
+French/European adaptation, data pipeline, source manifest, and AI exposure rationales are specific to this repository.

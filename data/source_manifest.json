@@ -1,0 +1,66 @@
+[
+  {
+    "id": "eurostat_lfsa_egai2d",
+    "name": "Employed persons by detailed occupation (ISCO-08 two digit level)",
+    "publisher": "Eurostat",
+    "url": "https://ec.europa.eu/eurostat/databrowser/view/lfsa_egai2d/default/table?lang=en",
+    "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/lfsa_egai2d?lang=en&freq=A&unit=THS_PER&sex=T&age=Y_GE15&geo=FR&sinceTimePeriod=2019&untilTimePeriod=2024",
+    "retrieved_date": "2026-04-24",
+    "last_update": "2026-04-17T11:00:00+0200",
+    "license": "Eurostat reuse policy / European Commission data reuse",
+    "fields_used": [
+      "employment by ISCO-08 occupation, France, 2019-2024"
+    ]
+  },
+  {
+    "id": "eurostat_earn_ses22_25",
+    "name": "Mean monthly earnings by sex, occupation and size class of the enterprise (2022)",
+    "publisher": "Eurostat",
+    "url": "https://ec.europa.eu/eurostat/databrowser/view/earn_ses22_25/default/table?lang=en",
+    "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses22_25?lang=en&freq=A&sex=T&indic_se=ERN&unit=EUR&geo=FR",
+    "retrieved_date": "2026-04-24",
+    "last_update": "2026-02-09T23:00:00+0100",
+    "license": "Eurostat reuse policy / European Commission data reuse",
+    "fields_used": [
+      "gross monthly earnings by ISCO-08 major group, France, 2022"
+    ],
+    "note": "SES salary data is available at ISCO major-group level by enterprise size class, without a total size-class category in this API response. The build uses a simple average across available size classes, then two-digit occupations inherit their major-group salary proxy."
+  },
+  {
+    "id": "eurostat_lfsa_egised",
+    "name": "Employed persons by occupation and educational attainment level",
+    "publisher": "Eurostat",
+    "url": "https://ec.europa.eu/eurostat/databrowser/view/lfsa_egised/default/table?lang=en",
+    "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/lfsa_egised?lang=en&freq=A&unit=THS_PER&sex=T&age=Y_GE15&geo=FR&time=2024",
+    "retrieved_date": "2026-04-24",
+    "last_update": "2026-04-17T11:00:00+0200",
+    "license": "Eurostat reuse policy / European Commission data reuse",
+    "fields_used": [
+      "dominant education attainment by ISCO-08 major group, France, 2024"
+    ],
+    "note": "Education is available at ISCO major-group level here; two-digit occupations inherit their major-group education proxy."
+  },
+  {
+    "id": "dares_fap_2021",
+    "name": "La nomenclature des familles professionnelles 2021",
+    "publisher": "DARES - service statistique du ministère en charge du Travail",
+    "url": "https://www.data.gouv.fr/datasets/la-nomenclature-des-familles-professionnelles-2021",
+    "retrieved_date": "2026-04-24",
+    "last_update": "2024-04-30",
+    "license": "See data.gouv.fr dataset page",
+    "fields_used": [
+      "French occupational taxonomy reference only in this build"
+    ],
+    "note": "Local data/fap_2021.csv is readable and used as a credibility reference; the final site uses Eurostat ISCO groups for comparable employment data."
+  },
+  {
+    "id": "project_ai_rubric",
+    "name": "Project analytical AI exposure rubric",
+    "publisher": "This repository",
+    "retrieved_date": "2026-04-24",
+    "fields_used": [
+      "AI exposure score and French rationale"
+    ],
+    "note": "AI exposure scores are analytical estimates, not official statistics and not disappearance predictions."
+  }
+]
